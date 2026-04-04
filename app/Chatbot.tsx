@@ -181,7 +181,7 @@ export default function Chatbot() {
                 height: 50,
                 borderRadius: "50%",
                 backgroundColor: "#4f46e5",
-                color: "#fff",
+                color: "hsl(0, 0%, 0%)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -197,7 +197,7 @@ export default function Chatbot() {
           {/* Messages */}
           <div
             style={{
-              border: "1px solid #ccc",
+              border: "1px solid #cccccc77",
               borderRadius: 6,
               padding: 10,
               height: 250,
