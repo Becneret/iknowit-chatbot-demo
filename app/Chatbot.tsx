@@ -118,11 +118,14 @@ export default function Chatbot() {
         break;
 
       case "questionText":
-        setLead((prev) => ({ ...prev, question: input }));
-        addBotMessage("Optional: leave your contact so we can reply.");
-        setStep("questionContact");
-        setInput("");
-        break;
+  setLead((prev) => ({ ...prev, question: input }));
+
+  addBotMessage(
+    "Thanks for your question 👍 One of our team members will review it and respond shortly."
+  );
+
+  setStep("questionContact");
+  break;
 
       case "questionContact":
         setLead((prev) => ({ ...prev, contact: input }));
