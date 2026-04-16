@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type Message = { text: string; sender: "bot" | "user" };
 
@@ -22,6 +22,14 @@ export default function Chatbot() {
   const [lead, setLead] = useState({ name: "", contact: "", question: "" });
   const [isTyping, setIsTyping] = useState(false);
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+  const timer = setTimeout(() => {
+    setOpen(true);
+  }, 1500);
+
+  return () => clearTimeout(timer);
+}, []);
 
   // 🔥 Message Helpers
   const addUserMessage = (text: string) => {
