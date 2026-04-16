@@ -181,7 +181,7 @@ export default function Chatbot() {
                 height: 50,
                 borderRadius: "50%",
                 backgroundColor: "#4f46e5",
-                color: "rgb(0, 0, 0),
+                color: "rgb(0, 0, 0)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
